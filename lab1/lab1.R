@@ -17,4 +17,22 @@ cov(cylinders, acceleration)/(sd(cylinders)*sd(acceleration))
 
 plot(cylinders,horsepower)
 plot(model_year,horsepower)
+bloxplot(split(horsepower,cylinders))
+bloxplot(split(horsepower,model_year))
+bloxplot(split(mpg,model_year))
+
+
+test2<-split(acceleration,model_year)
+test3<-split(horsepower,model_year)
+
+(split(cylinders,acceleration))
+(split(model_year,horsepower))
+
+consumo1<-consumo1$`70`
+consumo<-(split(mpg,model_year))
+consumo71<-consumo1$`71`
+consumo71<-consumo$`71`
+consumo72<-consumo$`72`
+consumo73<-consumo$`73`
+consumo73<-consumo$`73`
 
