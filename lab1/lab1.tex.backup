@@ -87,7 +87,7 @@ ya que el año del modelo se mueve entre 70 y 82 a diferencia de otras que tiene
 
 Para
 
-\newpage
+
 
 \subsection{Pregunta 3}
 
@@ -116,40 +116,10 @@ tt
     \caption{lala}
     \label{fig:lala}
 \end{figure}
-\newpage
+
 \subsection{Pregunta 5}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_horsepower_model_year.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
-
-\newpage
 \subsection{Pregunta 6}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_mpg_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_acceleration_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_horsepower_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
-
 
 \subsection{Pregunta 7}
 
