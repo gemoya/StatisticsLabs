@@ -172,54 +172,92 @@ positiva y muy cercana a 1 implica una intensidad fuerte en la proporcionalidad 
 Nuevamente la mayor parte de los boxplot no estan desacoplados por lo que se puede percibir una relación entre ellos, a primera
 vista se puede pensar que la relación será relativamente parecida a la anterior pero si se toma atención especial en los boxplot se pueden
 descubrir elmentos que no dejarán desarrollar una hipótesis similar a la anterior.
-a diferencia del caso anterior aquí se presenta una disminución en los valores de la potencia para las menores cantidades de cilindros.
-Se presentan 2 datos atípicos, uno en la cantidad de cilindros 6 y otra en 8, donde ambos outliers son 
+A diferencia del caso anterior aquí se presenta una disminución en los valores de la potencia para las menores cantidades de cilindros.
+Aparecen 2 datos atípicos, uno en la cantidad de cilindros 6 y otra en 8, donde ambos outliers son 
 en valores muy altos en relación al resto que se encuentra
-dentro de sus boxplot respectivos. Existen 2
+dentro de sus boxplot respectivos. Existen 2 boxplot que tienen bigotes ``largos'' mientras que el resto los tienen
+ muy cortos en relación a su tamaño lo que da para pensar que existe poca dispersión en cada caso, 
+ a esto hay que agregar que la mayoría de los boxplot tienen la concentración de los datos entre su primer cuartil y su mediana
+ es decir que la mayor parte se encuentra en los valores menores dentro de su espectro de valores posibles, 
+ además todas las medianas a excepción de la que corresponde a 8 cilindros, se encuentran en un valor cercano o menor a 100.
+ El único que no lo cumple a su vez, resulta ser el boxplot que demuestra la mayor dispersión de los datos, nuevamente
+ nos referimos a la cantidad de 8 cilindros, esto a priori permite imaginar que la dispersión de sus valores 
+ no alcanza a hacer el correspondiente peso sobre el resto de los boxplot con fuertes concentraciones en 
+ aceleraciones bajo los 100.
+ Para acompañar la argumentación anterior se calcula la covarianza, esta es de $-2.370842$, al ser negativa entonces
+ implica una relación inversamente proporcional 
+ reafirmando gran parte de lo dicho anteriormente pero es necesario conocer su intensidad, por lo que se utilizará 
+ la correlación lineal, siendo $-0.5054195$. Al encontrarse entre $-1$ y $0$ no es tan fácil afirmar que
+ tan fuerte es la intensidad de la relación. Tal vez otro indicador que no busque ajustar mediante alguna recta los datos nos
+ podría entregar una relación más precisa.
+ 
 
 
 \newpage
 
 \subsection{Pregunta 4}
+Del resumen de los datos se desprende que el tercer cuartil es 125, y que el valor máximo es 238, por lo que
+los boxplot que muestren valores entre estos dos números podrán asegurar tener las potencias más altas.
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{boxplot_horsepower_model_year.jpg}
     \caption{lala}
     \label{fig:lala}
 \end{figure}
+
+En este grupo se encuentran todos, pero si no contamos los bigotes entonces se consideran los años
+entre el 70 y el 79 como los con mayores potencias, la primera idea al respecto es que la modernización tanto de la construcción
+de vehículo como de la eficiencia de los motores puede permitir que a través de los años se requiera menos potencia para que estos
+puedan moverse adecuadamente. Pero de este gran conjunto de años algunos presentan datos atípicos, estos son el 74, 75 y 77 además desde el 74 en adelante existe
+mucha diferencia entre los valores que alcanzan las cajas sin contar los bigotes respecto los que se encuentran en el 70-73, por lo que quedan descartados los del 74 en adelante.
+Ahora el grupo en cuestion está entre el 70 y el 73, pero si se observan detenidamente es posible ver que existen dos grupos uno con mayor potencia que el otro, 
+notando que la diferencia entre sus medianas es alta sumado a que que los del 71 y 72
+concentran la mayor parte de sus datos en valores mucho menores que los del 70 y 73.
+Finalmente se concluye que el rango de años con mayor potencia es el 70-73 pero los años con modelos de mayor potencia son específicamente el 70 y el 73.
+
 \newpage
 \subsection{Pregunta 5}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_horsepower_model_year.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
-
-\newpage
-\subsection{Pregunta 6}
-
+Para encontrar este grupo, se decide particionar el consumo en base al origen, luego se realizan boxplot de cada nuevo grupo
+permitiendo observar relaciones directas entre origen y el consumo que hay segun este.
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{boxplot_mpg_origin.jpg}
     \caption{lala}
     \label{fig:lala}
 \end{figure}
+A primera vista se descarta el boxplot que corresponde a los modelos de origen 3, ya que este presenta una concentración de datos en valores
+mayores a 30, lo que supera fácilmente a los de origen 1 y 2.
+De los restantes se observa que el los que corresponden al origen 1 poseen menor consumo que los del grupo 2, sin ahondar mucho,
+el largo de los bigotes de la caja 2 puede hacer pensar que podría llegar a ponderar menos consumo ayudado de su concentración de datos
+en sus valores menores, pero para ello necesitaría que la caja estuviera menos desacoplada respecto a la primera, ya que cuando termina una empieza la otra,
+dejando a la del grupo de origen 2 sin oportunidad. Por lo tanto los vehículo correspondientes al origen 1 son los de menor consumo.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_acceleration_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
+\newpage
+\subsection{Pregunta 6}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{boxplot_horsepower_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
-\end{figure}
+Para encontrar la respuesta es necesario realizar una partición de la aceleración y de la potencia, ambas respecto al origen, luego graficar los resultados
+mediante boxplots tomando en consideración los que corresponden al origen 1.
+
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{boxplot_acceleration_origin.jpg}
+              \caption{This is the first figure}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{boxplot_horsepower_origin.jpg}
+              \caption{This is the second figure}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+De ambos, se puede notar que  tanto como en aceleración como en potencia los vehículos de origen 1 abarcan casi la totalidad de los
+valores posibles en la muestra, lo que podría dificultar el análisis. Pero para resolver esto se debe obervar que el que corresponde a la potencia
+posee una concentración de sus datos sus valores menores pero sus cuartiles abarcan datos altos y bajos.
 
 
 \subsection{Pregunta 7}

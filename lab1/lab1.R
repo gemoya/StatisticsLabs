@@ -67,7 +67,6 @@ r_displacement_cylinders<-cov(displacement, cylinders)/(sd(displacement)*sd(cyli
 cov_cyl_accel<-cov(cylinders,acceleration)
 r_cyl_accel<-cov(cylinders, acceleration)/(sd(cylinders)*sd(acceleration))
 
-
 plot(cylinders,horsepower)
 plot(model_year,horsepower)
 boxplot(split(horsepower,cylinders))
