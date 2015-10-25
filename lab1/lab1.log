@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.14)  24 OCT 2015 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.14)  24 OCT 2015 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,6 +357,14 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks21
+\float@box=\box30
+\@float@everytoks=\toks22
+\@floatcapt=\box31
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
@@ -386,34 +394,37 @@ LaTeX Warning: Label `fig:lala' multiply defined.
 
 LaTeX Warning: Label `fig:lala' multiply defined.
 
+
+LaTeX Warning: Label `fig:lala' multiply defined.
+
 )
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen110
-\scratchbox=\box30
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count104
+\scratchbox=\box32
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen111
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks22
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -462,13 +473,13 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count107
+\c@lstlisting=\count108
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 44.
 
 [1
 
@@ -482,58 +493,102 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `lab1.toc'.
 
- [2] [3]
-<boxplot_displacement_cylinders.jpg, id=20, 481.8pt x 481.8pt>
+ [2] <model_year_histogram.jpg, id=15, 481.8pt x 481.8pt>
+File: model_year_histogram.jpg Graphic file (type jpg)
+
+<use model_year_histogram.jpg>
+Package pdftex.def Info: model_year_histogram.jpg used on input line 94.
+(pdftex.def)             Requested size: 192.71658pt x 192.71658pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<bp_acceleration_year.jpg, id=16, 481.8pt x 481.8pt>
+File: bp_acceleration_year.jpg Graphic file (type jpg)
+
+<use bp_acceleration_year.jpg>
+Package pdftex.def Info: bp_acceleration_year.jpg used on input line 108.
+(pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
+ <bp_mpg_year.jpg, id=17, 481.8pt x 481.8pt>
+File: bp_mpg_year.jpg Graphic file (type jpg)
+
+<use bp_mpg_year.jpg>
+Package pdftex.def Info: bp_mpg_year.jpg used on input line 115.
+(pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
+
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 104--120
+[]$[]$ 
+ []
+
+[3]
+File: bp_acceleration_year.jpg Graphic file (type jpg)
+ <use bp_acceleration_year.jpg>
+Package pdftex.def Info: bp_acceleration_year.jpg used on input line 125.
+(pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
+File: bp_mpg_year.jpg Graphic file (type jpg)
+ <use bp_mpg_year.jpg>
+Package pdftex.def Info: bp_mpg_year.jpg used on input line 132.
+(pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
+
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 121--137
+[]$[]$ 
+ []
+
+[4 <./model_year_histogram.jpg> <./bp_acceleration_year.jpg> <./bp_mpg_year.jpg
+>] [5] <boxplot_displacement_cylinders.jpg, id=29, 481.8pt x 481.8pt>
 File: boxplot_displacement_cylinders.jpg Graphic file (type jpg)
 
 <use boxplot_displacement_cylinders.jpg>
 Package pdftex.def Info: boxplot_displacement_cylinders.jpg used on input line 
-97.
+150.
 (pdftex.def)             Requested size: 192.71658pt x 192.71658pt.
 
-<boxplot_horsepower_cylinders.jpg, id=21, 481.8pt x 481.8pt>
+<boxplot_horsepower_cylinders.jpg, id=30, 481.8pt x 481.8pt>
 File: boxplot_horsepower_cylinders.jpg Graphic file (type jpg)
 
 <use boxplot_horsepower_cylinders.jpg>
-Package pdftex.def Info: boxplot_horsepower_cylinders.jpg used on input line 10
-4.
+Package pdftex.def Info: boxplot_horsepower_cylinders.jpg used on input line 16
+8.
 (pdftex.def)             Requested size: 192.71658pt x 192.71658pt.
- [4 <./boxplot_displacement_cylinders.jpg> <./boxplot_horsepower_cylinders.jpg>
-]
-<boxplot_horsepower_model_year.jpg, id=25, 481.8pt x 481.8pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./boxplot_displacement_cylinders.jpg>] [7 <./boxplot_horsepower_cylinders.j
+pg>] <boxplot_horsepower_model_year.jpg, id=39, 481.8pt x 481.8pt>
 File: boxplot_horsepower_model_year.jpg Graphic file (type jpg)
 
 <use boxplot_horsepower_model_year.jpg>
-Package pdftex.def Info: boxplot_horsepower_model_year.jpg used on input line 1
-15.
+Package pdftex.def Info: boxplot_horsepower_model_year.jpg used on input line 2
+01.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
- [5 <./boxplot_horsepower_model_year.jpg>]
+ [8 <./boxplot_horsepower_model_year.jpg>]
 File: boxplot_horsepower_model_year.jpg Graphic file (type jpg)
  <use boxplot_horsepower_model_year.jpg>
-Package pdftex.def Info: boxplot_horsepower_model_year.jpg used on input line 1
-24.
+Package pdftex.def Info: boxplot_horsepower_model_year.jpg used on input line 2
+10.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
- [6]
-<boxplot_mpg_origin.jpg, id=32, 481.8pt x 481.8pt>
+ [9]
+<boxplot_mpg_origin.jpg, id=46, 481.8pt x 481.8pt>
 File: boxplot_mpg_origin.jpg Graphic file (type jpg)
 
 <use boxplot_mpg_origin.jpg>
-Package pdftex.def Info: boxplot_mpg_origin.jpg used on input line 134.
+Package pdftex.def Info: boxplot_mpg_origin.jpg used on input line 220.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
 
-<boxplot_acceleration_origin.jpg, id=33, 481.8pt x 481.8pt>
+<boxplot_acceleration_origin.jpg, id=47, 481.8pt x 481.8pt>
 File: boxplot_acceleration_origin.jpg Graphic file (type jpg)
 
 <use boxplot_acceleration_origin.jpg>
-Package pdftex.def Info: boxplot_acceleration_origin.jpg used on input line 141
+Package pdftex.def Info: boxplot_acceleration_origin.jpg used on input line 227
 .
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
 
-<boxplot_horsepower_origin.jpg, id=34, 481.8pt x 481.8pt>
+<boxplot_horsepower_origin.jpg, id=48, 481.8pt x 481.8pt>
 File: boxplot_horsepower_origin.jpg Graphic file (type jpg)
 
 <use boxplot_horsepower_origin.jpg>
-Package pdftex.def Info: boxplot_horsepower_origin.jpg used on input line 148.
+Package pdftex.def Info: boxplot_horsepower_origin.jpg used on input line 234.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
 
 
@@ -543,20 +598,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [7 <./boxplot_mpg_origin.jpg> <./boxplot_acceleration_origin.jpg>] [8 <./boxp
-lot_horsepower_origin.jpg>] (./lab1.aux)
+) [10 <./boxplot_mpg_origin.jpg> <./boxplot_acceleration_origin.jpg>] [11 <./bo
+xplot_horsepower_origin.jpg>] (./lab1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4234 strings out of 495025
- 59102 string characters out of 6181514
- 142910 words of memory out of 5000000
- 7377 multiletter control sequences out of 15000+600000
+ 4306 strings out of 495025
+ 60209 string characters out of 6181514
+ 145244 words of memory out of 5000000
+ 7442 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,12n,49p,237b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,49p,237b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -564,11 +619,12 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti10.pfb>
-Output written on lab1.pdf (8 pages, 184169 bytes).
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti10.pfb>
+Output written on lab1.pdf (11 pages, 254817 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
