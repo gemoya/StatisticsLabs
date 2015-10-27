@@ -118,3 +118,11 @@ consumo72<-consumo$`72`
 consumo73<-consumo$`73`
 consumo73<-consumo$`73`
 
+lala2<-mpg[which(data$cylinders == 8 & (data$model_year == 70 | data$model_year == 71 | data$model_year == 72 | data$model_year == 73))]
+
+mpg_70_8<-mpg[which(data$cylinders == 8 & (data$model_year == 70 ))]
+mpg_71_8<-mpg[which(data$cylinders == 8 & (data$model_year == 71 ))]
+mpg_72_8<-mpg[which(data$cylinders == 8 & (data$model_year == 72 ))]
+mpg_73_8<-mpg[which(data$cylinders == 8 & (data$model_year == 73 ))]
+
+Naranjo_car <- car_name[which(data$mpg == 9 & data$acceleration == 18.5)]

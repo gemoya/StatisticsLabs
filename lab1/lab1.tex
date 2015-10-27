@@ -51,6 +51,10 @@ language=C
 \newpage
 
 \section{Introducción}
+El presente documento abarca el estudio sobre distintas variables de una data relacionada con vehículos y alguna de sus características con el fin de realizar 
+un estudio que busque encontrar relaciones entre las distintas variables y a partir de ello concluir a qué pueden deberse o bien ayudar en la toma de alguna decisión 
+que involucre la internalización de aquellas variables en algun problema.
+
 \section{Desarrollo}
 \subsection{Pregunta 1}
 
@@ -92,50 +96,14 @@ en este ámbito lo mejor que podemos hacer es utilizar un histograma.
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.4]{model_year_histogram.jpg}
-    \caption{lala}
-    \label{fig:lala}
+    \caption{Histograma de cantidad de modelos por año}
+    \label{fig:model_year_histogram}
 \end{figure}
 
 Observando el gráfico es posible notar que entre los años 70 y 78 existe cierta irregularidad en la cantidad de modelos por
 año, logrando la estabilidad desde el 78 en adelante. Las razones que puedan explicar esto son múltiples por ejemplo en aquellos años
 no existía la renovación del vehículo por parte de cada dueño cada 1 o 2 años como ocurre hoy en día, además en los años 70 aún
 era un mercado emergente que no permitía proyectar bien la demanda.
-
-  \begin{minipage}{\linewidth}
-      \centering
-      \begin{minipage}{0.45\linewidth}
-          \begin{figure}[H]
-              \includegraphics[width=\linewidth]{bp_acceleration_year.jpg}
-              \caption{This is the first figure}
-          \end{figure}
-      \end{minipage}
-      \hspace{0.05\linewidth}
-      \begin{minipage}{0.45\linewidth}
-          \begin{figure}[H]
-              \includegraphics[width=\linewidth]{bp_mpg_year.jpg}
-              \caption{This is the second figure}
-          \end{figure}
-      \end{minipage}
-  \end{minipage}
-  
-    \begin{minipage}{\linewidth}
-      \centering
-      \begin{minipage}{0.45\linewidth}
-          \begin{figure}[H]
-              \includegraphics[width=\linewidth]{bp_acceleration_year.jpg}
-              \caption{This is the first figure}
-          \end{figure}
-      \end{minipage}
-      \hspace{0.05\linewidth}
-      \begin{minipage}{0.45\linewidth}
-          \begin{figure}[H]
-              \includegraphics[width=\linewidth]{bp_mpg_year.jpg}
-              \caption{This is the second figure}
-          \end{figure}
-      \end{minipage}
-  \end{minipage}
-  
-  
 
 \newpage
 
@@ -148,8 +116,8 @@ de partir el conjunto de cilindrada en grupos por cilindro ilustrados por los di
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.4]{boxplot_displacement_cylinders.jpg}
-    \caption{lala}
-    \label{fig:lala}
+    \caption{Boxplot de Cilindrada agrupado por Cilindros}
+    \label{fig:boxplot_displacement_cylinders}
 \end{figure}
 A primera vista es posible observar que a medida que se aumentan los cilindros es posible
 encontrar motores con mayor cilindradas. La mayoría de las cajas se encuentran acopladas solo por los bigotes lo que muestra
@@ -166,8 +134,8 @@ positiva y muy cercana a 1 implica una intensidad fuerte en la proporcionalidad 
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.4]{boxplot_horsepower_cylinders.jpg}
-    \caption{lala}
-    \label{fig:lala}
+    \caption{Boxplot de Potencia agrupada por Cilindros}
+    \label{fig:boxplot_horsepower_cylinders}
 \end{figure}
 Nuevamente la mayor parte de los boxplot no estan desacoplados por lo que se puede percibir una relación entre ellos, a primera
 vista se puede pensar que la relación será relativamente parecida a la anterior pero si se toma atención especial en los boxplot se pueden
@@ -201,8 +169,8 @@ los boxplot que muestren valores entre estos dos números podrán asegurar tener
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{boxplot_horsepower_model_year.jpg}
-    \caption{lala}
-    \label{fig:lala}
+    \caption{Boxplot de Potencia agrupado por año del modelo}
+    \label{fig:boxplot_horsepower_model_year}
 \end{figure}
 
 En este grupo se encuentran todos, pero si no contamos los bigotes entonces se consideran los años
@@ -223,8 +191,8 @@ permitiendo observar relaciones directas entre origen y el consumo que hay segun
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{boxplot_mpg_origin.jpg}
-    \caption{lala}
-    \label{fig:lala}
+    \caption{Boxplot de Consumo de combustible agrupado por origen}
+    \label{fig:boxplot_mpg_origin}
 \end{figure}
 A primera vista se descarta el boxplot que corresponde a los modelos de origen 3, ya que este presenta una concentración de datos en valores
 mayores a 30, lo que supera fácilmente a los de origen 1 y 2.
@@ -244,42 +212,79 @@ mediante boxplots tomando en consideración los que corresponden al origen 1.
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
               \includegraphics[width=\linewidth]{boxplot_acceleration_origin.jpg}
-              \caption{This is the first figure}
+              \caption{Boxplot de Aceleración agrupado por Origen}
           \end{figure}
       \end{minipage}
       \hspace{0.05\linewidth}
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
               \includegraphics[width=\linewidth]{boxplot_horsepower_origin.jpg}
-              \caption{This is the second figure}
+              \caption{Boxplot de Potencia agrupado por Origen}
           \end{figure}
       \end{minipage}
   \end{minipage}
-De ambos, se puede notar que  tanto como en aceleración como en potencia los vehículos de origen 1 abarcan casi la totalidad de los
+De ambos, se puede notar que  tanto en aceleración como en potencia los vehículos de origen 1 abarcan casi la totalidad de los
 valores posibles en la muestra, lo que podría dificultar el análisis. Pero para resolver esto se debe obervar que el que corresponde a la potencia
 posee una concentración de sus datos sus valores menores pero sus cuartiles abarcan datos altos y bajos.
 Para hacer un análisis más preciso se obtienen la covarianza, la cual es de $-78.31126$, de esto se entiende que existe una relación inversamente proporcional,
 pero se requiere de otro indicador para encontrar la intensidad de esta relación, para ello se usa el coeficiente de correlación lineal, que retorna un valor de 
 $-0.7160874$, al ser negativo pero más cercano al -1 que al 0 entonces es posible concluir que la relación es lineal inversamente proporcional.
 
-
+\newpage
 \subsection{Pregunta 7}
+
+De lo desarrollado anteriormente se toman las siguientes condiciones que deben cumplir los modelos:
+\begin{itemize}
+ \item Cantidad de cilindros igual a 8 y año 70
+ \item Cantidad de cilindros igual a 8 y año 71
+ \item Cantidad de cilindros igual a 8 y año 72
+ \item Cantidad de cilindros igual a 8 y año 73
+\end{itemize}
+
+Al aplicarlas sobre el consumo se obtienen 4 nuevos conjuntos de datos, todos muy exactos lo que imposibilita realizar boxplot, por lo tanto
+se utilizarán los promedios de cada subconjunto de la data.
+
+\begin{table}[h]
+    \begin{center}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    Cantidad de cilindros & Año & Media del consumo \\ \hline
+    8                     & 70  & 14.11111          \\
+    8                     & 71  & 13.42857          \\
+    8                     & 72  & 13.61538          \\
+    8                     & 73  & 13.2              \\ \hline
+    \end{tabular}
+    \end{center}
+\end{table}
+
+De la tabla se puede observar que el menor consumo coincide con Cantidad de cilindros igual a 8, año 73, obteniendo una media de 13.2. En tanto
+que la variación con el resto de los años va en el orden de decimales, ya que con el más lejano de los subconjuntos, la diferencia no alcanza a ser mayor a 1.
 
 
 
 \subsection{Pregunta 8}
+Para responder esta pregunta se tomará el supuesto en que el ayudante Rodrigo Naranjo es amante del derrape en los autos además de ser jugador de cartas Mitos y Leyendas
+por lo que necesita ahorrar para poder comprar las mejores cartas. Por tanto, la mejor opción para Rodrigo es el auto mas barato posible y con la mejor aceleración posible,
+de esta forma tendrá dinero para comprar cartas y para hacer las modificaciones a su auto para derrapes. El modelo que cumple
+estos requisitos es el ``hi 1200d`` con un consumo de 9 y acceleración de 18.5.
 
 
 \section{Conclusiones}
+Luego de haber realizado los análisis pertinentes en cada punto, es posible entender de mejor forma el uso de algunas herramientas, como lo es el coeficiente de varación
+en el estudio de la homogeneidad de alguna data entendiendo de como la media actua como un ajuste o norma de la desviación estándar permitiendo analizar
+distintos coeficientes de variación en paralelo sin tener que tomar caso a caso independiente uno de otro. Se utilizó el histograma como herramienta que permite observar
+variaciones de frecuencias en datos que se agrupan según rangos para facilitar la comprensión del fenómeno en estudio.
+El uso de boxplot para analizar múltiples subconjuntos de datos y como es posible estudiar la dispersión o concentración de los datos según sea el caso, además de comprender
+la presencia de datos atípicos en estos casos.
 
-\section{Anexos}
+%\section{Anexos}
 
 
-\bibliographystyle{alpha}
-\bibliography{bibbase}
+%\bibliographystyle{alpha}
+%\bibliography{bibbase}
 
 % referencias
-[1] Nombre de la referencia, Autor.
+%[1] Nombre de la referencia, Autor.
 
 
 
