@@ -1,21 +1,21 @@
 load("~/Documents/UTFSM/ILI-280/StatisticsLabs/lab1/lab1Data.Rdata")
 attach(data)
-sd(mpg)
-mean(mpg)
-sd(cylinders)
-mean(cylinders)
-sd(displacement)
-mean(displacement)
-sd(horsepower)
-mean(horsepower)
-sd(weight)
-mean(weight)
-sd(acceleration)
-mean(acceleration)
-sd(model_year)
-mean(model_year)
-sd(origin)
-mean(origin)
+sd_mpg<-sd(mpg)
+mean_mpg<-mean(mpg)
+sd_cylinders<-sd(cylinders)
+mean_cylinders<-mean(cylinders)
+sd_displacement<-sd(displacement)
+mean<-displacement<-mean(displacement)
+sd_horsepower<-sd(horsepower)
+mean_horsepower<-mean(horsepower)
+sd_weight<-sd(weight)
+mean_weight<-mean(weight)
+sd_acceleration<-sd(acceleration)
+mean_acceleration<-mean(acceleration)
+sd_model_year<-sd(model_year)
+mean_model_year<-mean(model_year)
+sd_origin<-sd(origin)
+mean_origin<-mean(origin)
 
 
 cv_mpg<-(sd(mpg)/mean(mpg))
@@ -56,32 +56,26 @@ jpeg('boxplot_displacement_cylinders.jpg')
 boxplot(split(displacement,cylinders))
 dev.off()
 
+jpeg('boxplot_acceleration_cylinders.jpg')
+boxplot(split(acceleration,cylinders))
+dev.off()
 jpeg('boxplot_horsepower_cylinders.jpg')
 boxplot(split(horsepower,cylinders))
 dev.off()
 jpeg('boxplot_horsepower_model_year.jpg')
 boxplot(split(horsepower,model_year))
 dev.off()
+
 cov_dis_cyl<-cov(displacement, cylinders)
 r_displacement_cylinders<-cov(displacement, cylinders)/(sd(displacement)*sd(cylinders))
 cov_cyl_accel<-cov(cylinders,acceleration)
 r_cyl_accel<-cov(cylinders, acceleration)/(sd(cylinders)*sd(acceleration))
 
-plot(cylinders,horsepower)
-plot(model_year,horsepower)
-boxplot(split(horsepower,cylinders))
-boxplot(split(horsepower,model_year))
-boxplot(split(mpg,model_year))
-
-
-test2<-split(acceleration,model_year)
-test3<-split(horsepower,model_year)
 
 (split(cylinders,acceleration))
 (split(model_year,horsepower))
 
 
-consumo1<-consumo1$`70`
 jpeg('boxplot_mpg_model_year.jpg')
 boxplot(split(mpg,model_year))
 dev.off()
@@ -111,18 +105,16 @@ sd(acceleration_1)
 cov_a1_h1<-cov(acceleration_1,horsepower_1)
 r_a1_h1<-cov(acceleration_1,horsepower_1)/(sd(acceleration_1)*sd(horsepower_1))
 
+mpg_70_5<-mpg[which(data$cylinders == 5 & (data$model_year == 70 ))]
+mpg_71_5<-mpg[which(data$cylinders == 5 & (data$model_year == 71 ))]
+mpg_72_5<-mpg[which(data$cylinders == 5 & (data$model_year == 72 ))]
+mpg_73_5<-mpg[which(data$cylinders == 5 & (data$model_year == 73 ))]
+mpg_74_5<-mpg[which(data$cylinders == 5 & (data$model_year == 74 ))]
+mpg_75_5<-mpg[which(data$cylinders == 5 & (data$model_year == 75 ))]
+mpg_76_5<-mpg[which(data$cylinders == 5 & (data$model_year == 76 ))]
+mpg_77_5<-mpg[which(data$cylinders == 5 & (data$model_year == 77 ))]
+mpg_78_5<-mpg[which(data$cylinders == 5 & (data$model_year == 78 ))]
+mpg_79_5<-mpg[which(data$cylinders == 5 & (data$model_year == 79 ))]
 
-consumo71<-consumo1$`71`
-consumo71<-consumo$`71`
-consumo72<-consumo$`72`
-consumo73<-consumo$`73`
-consumo73<-consumo$`73`
-
-lala2<-mpg[which(data$cylinders == 8 & (data$model_year == 70 | data$model_year == 71 | data$model_year == 72 | data$model_year == 73))]
-
-mpg_70_8<-mpg[which(data$cylinders == 8 & (data$model_year == 70 ))]
-mpg_71_8<-mpg[which(data$cylinders == 8 & (data$model_year == 71 ))]
-mpg_72_8<-mpg[which(data$cylinders == 8 & (data$model_year == 72 ))]
-mpg_73_8<-mpg[which(data$cylinders == 8 & (data$model_year == 73 ))]
 
 Naranjo_car <- car_name[which(data$mpg == 9 & data$acceleration == 18.5)]

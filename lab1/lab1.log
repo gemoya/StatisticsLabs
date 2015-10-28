@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.14)  26 OCT 2015 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.14)  27 OCT 2015 02:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -489,35 +489,35 @@ Package pdftex.def Info: boxplot_displacement_cylinders.jpg used on input line
 118.
 (pdftex.def)             Requested size: 192.71658pt x 192.71658pt.
 
-<boxplot_horsepower_cylinders.jpg, id=22, 481.8pt x 481.8pt>
-File: boxplot_horsepower_cylinders.jpg Graphic file (type jpg)
+<boxplot_acceleration_cylinders.jpg, id=22, 481.8pt x 481.8pt>
+File: boxplot_acceleration_cylinders.jpg Graphic file (type jpg)
 
-<use boxplot_horsepower_cylinders.jpg>
-Package pdftex.def Info: boxplot_horsepower_cylinders.jpg used on input line 13
-6.
+<use boxplot_acceleration_cylinders.jpg>
+Package pdftex.def Info: boxplot_acceleration_cylinders.jpg used on input line 
+136.
 (pdftex.def)             Requested size: 192.71658pt x 192.71658pt.
  [4 <./model_year_histogram.jpg> <./boxplot_displacement_cylinders.jpg>] [5 <./
-boxplot_horsepower_cylinders.jpg>]
+boxplot_acceleration_cylinders.jpg>]
 <boxplot_horsepower_model_year.jpg, id=30, 481.8pt x 481.8pt>
 File: boxplot_horsepower_model_year.jpg Graphic file (type jpg)
 
 <use boxplot_horsepower_model_year.jpg>
 Package pdftex.def Info: boxplot_horsepower_model_year.jpg used on input line 1
-71.
+63.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
  [6 <./boxplot_horsepower_model_year.jpg>] <boxplot_mpg_origin.jpg, id=34, 481.
 8pt x 481.8pt>
 File: boxplot_mpg_origin.jpg Graphic file (type jpg)
 
 <use boxplot_mpg_origin.jpg>
-Package pdftex.def Info: boxplot_mpg_origin.jpg used on input line 193.
+Package pdftex.def Info: boxplot_mpg_origin.jpg used on input line 185.
 (pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
  [7 <./boxplot_mpg_origin.jpg>]
 <boxplot_acceleration_origin.jpg, id=39, 481.8pt x 481.8pt>
 File: boxplot_acceleration_origin.jpg Graphic file (type jpg)
 
 <use boxplot_acceleration_origin.jpg>
-Package pdftex.def Info: boxplot_acceleration_origin.jpg used on input line 214
+Package pdftex.def Info: boxplot_acceleration_origin.jpg used on input line 206
 .
 (pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
 
@@ -525,26 +525,26 @@ Package pdftex.def Info: boxplot_acceleration_origin.jpg used on input line 214
 File: boxplot_horsepower_origin.jpg Graphic file (type jpg)
 
 <use boxplot_horsepower_origin.jpg>
-Package pdftex.def Info: boxplot_horsepower_origin.jpg used on input line 221.
+Package pdftex.def Info: boxplot_horsepower_origin.jpg used on input line 213.
 (pdftex.def)             Requested size: 198.45662pt x 198.45088pt.
 
-Overfull \hbox (14.22636pt too wide) in paragraph at lines 210--232
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 202--224
 []$[]$
  []
 
 [8 <./boxplot_acceleration_origin.jpg> <./boxplot_horsepower_origin.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 238.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 238.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
  [9] (./lab1.aux) ) 
 Here is how much of TeX's memory you used:
  4314 strings out of 495025
- 60391 string characters out of 6181514
+ 60401 string characters out of 6181514
  145244 words of memory out of 5000000
  7452 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
@@ -559,7 +559,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on lab1.pdf (9 pages, 219837 bytes).
+Output written on lab1.pdf (9 pages, 218788 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream

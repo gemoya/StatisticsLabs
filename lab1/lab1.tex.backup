@@ -133,25 +133,17 @@ el cálculo de otra herramienta dispnonible hasta el momento, la cual es la corr
 positiva y muy cercana a 1 implica una intensidad fuerte en la proporcionalidad entre los cilindros y la cilindrada de los modelos.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.4]{boxplot_horsepower_cylinders.jpg}
-    \caption{Boxplot de Potencia agrupada por Cilindros}
+    \includegraphics[scale=0.4]{boxplot_acceleration_cylinders.jpg}
+    \caption{Boxplot de Aceleración agrupada por Cilindros}
     \label{fig:boxplot_horsepower_cylinders}
 \end{figure}
-Nuevamente la mayor parte de los boxplot no estan desacoplados por lo que se puede percibir una relación entre ellos, a primera
-vista se puede pensar que la relación será relativamente parecida a la anterior pero si se toma atención especial en los boxplot se pueden
-descubrir elmentos que no dejarán desarrollar una hipótesis similar a la anterior.
-A diferencia del caso anterior aquí se presenta una disminución en los valores de la potencia para las menores cantidades de cilindros.
-Aparecen 2 datos atípicos, uno en la cantidad de cilindros 6 y otra en 8, donde ambos outliers son 
-en valores muy altos en relación al resto que se encuentra
-dentro de sus boxplot respectivos. Existen 2 boxplot que tienen bigotes ``largos'' mientras que el resto los tienen
- muy cortos en relación a su tamaño lo que da para pensar que existe poca dispersión en cada caso, 
- a esto hay que agregar que la mayoría de los boxplot tienen la concentración de los datos entre su primer cuartil y su mediana
- es decir que la mayor parte se encuentra en los valores menores dentro de su espectro de valores posibles, 
- además todas las medianas a excepción de la que corresponde a 8 cilindros, se encuentran en un valor cercano o menor a 100.
- El único que no lo cumple a su vez, resulta ser el boxplot que demuestra la mayor dispersión de los datos, nuevamente
- nos referimos a la cantidad de 8 cilindros, esto a priori permite imaginar que la dispersión de sus valores 
- no alcanza a hacer el correspondiente peso sobre el resto de los boxplot con fuertes concentraciones en 
- aceleraciones bajo los 100.
+
+Los boxplot aparentemente tienden a converger hacia el número de cilindros igual a 5 en donde se alcanzan las mayores aceleraciones. Otras características
+interesantes son que el boxplot que corresponde a 3 cilindros o  bien tiene muy pocos datos o la variación entre sus valores es demasiada baja lo que demuestra
+que tiene una concentración en un rango muy acotado. Los de 4 y 8 cilindros prsetentan datos atípicos pero con gran dispersión entre el resto de sus valores.
+Una hipótesis a comprobar es si la dispersión o la cantidad de datos de los boxplot relacionados a 6 y 8 cilindros podrán hacer mas peso que la de los 3 y 4 cilindros.
+
+
  Para acompañar la argumentación anterior se calcula la covarianza, esta es de $-2.370842$, al ser negativa entonces
  implica una relación inversamente proporcional 
  reafirmando gran parte de lo dicho anteriormente pero es necesario conocer su intensidad, por lo que se utilizará 
@@ -235,14 +227,16 @@ $-0.7160874$, al ser negativo pero más cercano al -1 que al 0 entonces es posib
 
 De lo desarrollado anteriormente se toman las siguientes condiciones que deben cumplir los modelos:
 \begin{itemize}
- \item Cantidad de cilindros igual a 8 y año 70
- \item Cantidad de cilindros igual a 8 y año 71
- \item Cantidad de cilindros igual a 8 y año 72
- \item Cantidad de cilindros igual a 8 y año 73
+ \item Cantidad de cilindros igual a 5 y año 70
+ \item Cantidad de cilindros igual a 5 y año 71
+ \item Cantidad de cilindros igual a 5 y año 72
+ \item Cantidad de cilindros igual a 5 y año 73
 \end{itemize}
 
-Al aplicarlas sobre el consumo se obtienen 4 nuevos conjuntos de datos, todos muy exactos lo que imposibilita realizar boxplot, por lo tanto
-se utilizarán los promedios de cada subconjunto de la data.
+Al aplicarlas sobre el consumo se obtienen 4 nuevos conjuntos de datos, pero todos estos están vacíos lo que quiere decir que no existen vehículos
+con cantidad de cilindros igual a 5 entre los años 70 al 73. Para contrarestar esta situación, es posible volver al boxplot de potencia y años de los modelos, 
+con el fin de ampliar el conjunto de vehículos que se encuentran entre los que tienen la mayor potencia, teniendo en cuenta que ahora se toma un intervalo de años
+más grande siendo este desde el 70 al 79, por lo que ahora hay que buscar si existen modelos con cantidad de cilindros igual a 5 entre los años 74 al 79.
 
 \begin{table}[h]
     \begin{center}
@@ -263,7 +257,10 @@ que la variación con el resto de los años va en el orden de decimales, ya que 
 
 
 \subsection{Pregunta 8}
-Para responder esta pregunta hay que 
+Para responder esta pregunta se tomará el supuesto en que el ayudante Rodrigo Naranjo es amante del derrape en los autos además de ser jugador de cartas Mitos y Leyendas
+por lo que necesita ahorrar para poder comprar las mejores cartas. Por tanto, la mejor opción para Rodrigo es el auto mas barato posible y con la mejor aceleración posible,
+de esta forma tendrá dinero para comprar cartas y para hacer las modificaciones a su auto para derrapes. El modelo que cumple
+estos requisitos es el ``hi 1200d`` con un consumo de 9 y acceleración de 18.5.
 
 
 \section{Conclusiones}
@@ -274,7 +271,7 @@ variaciones de frecuencias en datos que se agrupan según rangos para facilitar 
 El uso de boxplot para analizar múltiples subconjuntos de datos y como es posible estudiar la dispersión o concentración de los datos según sea el caso, además de comprender
 la presencia de datos atípicos en estos casos.
 
-\section{Anexos}
+%\section{Anexos}
 
 
 %\bibliographystyle{alpha}
