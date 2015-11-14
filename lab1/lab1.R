@@ -1,4 +1,4 @@
-load("~/Documents/UTFSM/ILI-280/StatisticsLabs/lab1/lab1Data.Rdata")
+load("lab1Data.Rdata")
 attach(data)
 sd_mpg<-sd(mpg)
 mean_mpg<-mean(mpg)
@@ -72,9 +72,6 @@ cov_cyl_accel<-cov(cylinders,acceleration)
 r_cyl_accel<-cov(cylinders, acceleration)/(sd(cylinders)*sd(acceleration))
 
 
-(split(cylinders,acceleration))
-(split(model_year,horsepower))
-
 
 jpeg('boxplot_mpg_model_year.jpg')
 boxplot(split(mpg,model_year))
@@ -92,23 +89,20 @@ mpg_origin<-split(mpg,origin)
 mpg_1<-mpg_origin$`1`
 
 horsepower_origin<-split(horsepower,origin)
-horsepower_1<-horsepower_origin$`1`
+horsepower_3<-horsepower_origin$`3`
 
 acceleration_origin<-split(acceleration,origin)
-acceleration_1<-acceleration_origin$`1`
+acceleration_3<-acceleration_origin$`3`
 
-mean(acceleration_1)
-mean(acceleration)
-sd(acceleration)
-sd(acceleration_1)
 
-cov_a1_h1<-cov(acceleration_1,horsepower_1)
-r_a1_h1<-cov(acceleration_1,horsepower_1)/(sd(acceleration_1)*sd(horsepower_1))
+cov_a3_h3<-cov(acceleration_3,horsepower_3)
+r_a3_h3<-cov(acceleration_3,horsepower_3)/(sd(acceleration_3)*sd(horsepower_3))
 
 mpg_70_5<-mpg[which(data$cylinders == 5 & (data$model_year == 70 ))]
 mpg_71_5<-mpg[which(data$cylinders == 5 & (data$model_year == 71 ))]
 mpg_72_5<-mpg[which(data$cylinders == 5 & (data$model_year == 72 ))]
 mpg_73_5<-mpg[which(data$cylinders == 5 & (data$model_year == 73 ))]
+
 mpg_74_5<-mpg[which(data$cylinders == 5 & (data$model_year == 74 ))]
 mpg_75_5<-mpg[which(data$cylinders == 5 & (data$model_year == 75 ))]
 mpg_76_5<-mpg[which(data$cylinders == 5 & (data$model_year == 76 ))]
@@ -116,5 +110,7 @@ mpg_77_5<-mpg[which(data$cylinders == 5 & (data$model_year == 77 ))]
 mpg_78_5<-mpg[which(data$cylinders == 5 & (data$model_year == 78 ))]
 mpg_79_5<-mpg[which(data$cylinders == 5 & (data$model_year == 79 ))]
 
+car_name_7<-car_name[which(data$cylinders == 5 & (data$model_year == 79 ))]
 
-Naranjo_car <- car_name[which(data$mpg == 9 & data$acceleration == 18.5)]
+
+Naranjo_car <- car_name[which(data$mpg==46.6 & data$acceleration == 17.9)]

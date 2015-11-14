@@ -36,7 +36,7 @@ language=C
 \title{LEC1 \\ Estadística Computacional 2015-1, UTFSM }
 \author{Gonzalo Moya 201173016-k}
 
-\date{\vspace*{1cm} Valparaíso, 30 de Octubre del 2015}
+\date{\vspace*{1cm} Valparaíso, 28 de Octubre del 2015}
 
 \newpage
 
@@ -186,18 +186,17 @@ permitiendo observar relaciones directas entre origen y el consumo que hay segun
     \caption{Boxplot de Consumo de combustible agrupado por origen}
     \label{fig:boxplot_mpg_origin}
 \end{figure}
-A primera vista se descarta el boxplot que corresponde a los modelos de origen 3, ya que este presenta una concentración de datos en valores
-mayores a 30, lo que supera fácilmente a los de origen 1 y 2.
-De los restantes se observa que el los que corresponden al origen 1 poseen menor consumo que los del grupo 2, sin ahondar mucho,
-el largo de los bigotes de la caja 2 puede hacer pensar que podría llegar a ponderar menos consumo ayudado de su concentración de datos
-en sus valores menores, pero para ello necesitaría que la caja estuviera menos desacoplada respecto a la primera, ya que cuando termina una empieza la otra,
-dejando a la del grupo de origen 2 sin oportunidad. Por lo tanto los vehículo correspondientes al origen 1 son los de menor consumo.
+
+A primera vista, se descarta el boxplot de los modelos de origen 1, ya que tienen bajo mpg a pesar de que el largo de sus bigotes
+demuestra una alta dispersión en los datos. El boxplot de modelos de origen 2  tiene varios outliers por lo que podría llegar a ser un
+candidato, pero lo importante es observar la poca distancia que existe entre la mediana y el cuartil tres del boxplot de modelos de origen 3. Es relevante
+destacar que la mediana del boxplot 3 esta por sobre el tercer cuartil del boxplot que le sigue, es decir el 2, lo que marca una diferencia entre los mpg que contienen.
 
 \newpage
 \subsection{Pregunta 6}
 
 Para encontrar la respuesta es necesario realizar una partición de la aceleración y de la potencia, ambas respecto al origen, luego graficar los resultados
-mediante boxplots tomando en consideración los que corresponden al origen 1.
+mediante boxplots tomando en consideración los que corresponden al origen 3.
 
   \begin{minipage}{\linewidth}
       \centering
@@ -215,12 +214,14 @@ mediante boxplots tomando en consideración los que corresponden al origen 1.
           \end{figure}
       \end{minipage}
   \end{minipage}
-De ambos, se puede notar que  tanto en aceleración como en potencia los vehículos de origen 1 abarcan casi la totalidad de los
-valores posibles en la muestra, lo que podría dificultar el análisis. Pero para resolver esto se debe obervar que el que corresponde a la potencia
-posee una concentración de sus datos sus valores menores pero sus cuartiles abarcan datos altos y bajos.
-Para hacer un análisis más preciso se obtienen la covarianza, la cual es de $-78.31126$, de esto se entiende que existe una relación inversamente proporcional,
+Se puede apreciar una relación inversamente proporcional, ya que el boxplot de la aceleración de vehículos de origen 3 tiene una alta concentración en valores altos
+su mediana esta cercana al cuartil 3 mientras que en el boxplot de potencia, se puede puede ver que ocurre lo contrario, tiene una baja mediana y bajo valor para el cuartil 1,
+de hecho son los bajos bajos en este caso respecto a los otros dos orígenes, esto quiere decir que sus valores se concentran fuertemente en potencias bajas.
+  
+  
+Para hacer un análisis numéricamente se obtienen la covarianza, la cual es de $-25.08669$, de esto se entiende que existe una relación inversamente proporcional,
 pero se requiere de otro indicador para encontrar la intensidad de esta relación, para ello se usa el coeficiente de correlación lineal, que retorna un valor de 
-$-0.7160874$, al ser negativo pero más cercano al -1 que al 0 entonces es posible concluir que la relación es lineal inversamente proporcional.
+$-0.7201492$, al ser negativo pero más cercano al -1 que al 0 entonces es posible concluir que la relación es lineal inversamente proporcional.
 
 \newpage
 \subsection{Pregunta 7}
@@ -243,16 +244,20 @@ a año se desprende que solo hay dos de estos modelos, perteneciendo a los años
  \item Cantidad de cilindros igual a 5 y año 79: Consumo (mpg) igual a 25.4.
 \end{itemize}
 
-Ahora están las condiciones para afirmar que el consumo menor es de 20.3 para el año 78, con una diferencia de 5.1 respecto al modelo que le sigue
-con un consumo de 25.4 en el año 79.
+Ahora están las condiciones para afirmar que el consumo menor es de 25.4 para el año 79, con una diferencia de 5.1 respecto al modelo que le sigue
+con un consumo de 20.3 en el año 78, donde el consumo menor es el al revés de lo que se puede pensar a simple vista, ya que mientras mas millas por galeón consuma
+menor es el consumo de combustible del auto. El modelo en cuestión es ``mercedes benz 300d''.
 
 
 \subsection{Pregunta 8}
 Para responder esta pregunta se tomará el supuesto en que el ayudante Rodrigo Naranjo es amante del derrape en los autos además de ser jugador de cartas Mitos y Leyendas
 por lo que necesita ahorrar para poder comprar las mejores cartas. Por tanto, la mejor opción para Rodrigo es el auto mas barato posible y con la mejor aceleración posible,
 de esta forma tendrá dinero para comprar cartas y para hacer las modificaciones a su auto para derrapes. El modelo que cumple
-estos requisitos es el ``hi 1200d`` con un consumo de 9 y acceleración de 18.5.
+estos requisitos es el ``mazda glc`` con un consumo de 46.6 y aceleración de 17.9. Se destaca que Rodrigo tuvo que privilegiar el consumo sobre
+la aceleración ya que hace poco ha salido la expansión ''Asgard'' de su juego de cartas favorito por lo que debe tener dinero suficiente para adquirir las cartas
+que necesite de esta expansión.
 
+\newpage
 
 \section{Conclusiones}
 Luego de haber realizado los análisis pertinentes en cada punto, es posible entender de mejor forma el uso de algunas herramientas, como lo es el coeficiente de varación
