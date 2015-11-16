@@ -1,0 +1,119 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{float}
+
+
+\lstset{
+language=C
+}
+
+\parskip 1mm
+\setlength{\topmargin}{0pt}
+\oddsidemargin  0.5cm
+\evensidemargin 0.5cm
+\textwidth      15.5cm
+\textheight     21.0cm
+\headsep        4 mm
+\parindent      0.5cm
+
+\pagestyle{fancyplain}
+
+\lhead{Estadística Computacional 2015}
+\rhead{\bf \it LEC 1 }
+\lfoot{}
+\cfoot{}
+\rfoot{\bf \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{LEC1 \\ Estadística Computacional 2015-1, UTFSM }
+\author{Gonzalo Moya 201173016-k}
+
+\date{\vspace*{1cm} Valparaíso, 15 de Noviembre del 2015}
+
+\newpage
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+
+\makeatother
+
+\newpage
+
+\section{Introducción}
+
+Este infrome aborda distintos problemas de probabilidad basándose en la noción frecuentista de esta con el fin de analizar
+el cómo la simulación de experimentos nos permite relacionar la probabilidad empírica con la probabilidad teórica, demostrando como la
+primera converge a la segunda y por tanto probando que la simulación es un método correcto para estudiar probabilidades.
+
+
+\section{Desarrollo}
+\subsection{Pregunta 1}
+El problema en cuestión es el famoso Monty Hall Problem para un caso particular de 5 puertas.
+\begin{itemize}
+ \item[a)] El jugador en cuestión inicialmente tenía la probabilidad de $\frac{1}{5}$ de acertar a la puerta, una vez que el presentador
+ abre una puerta y a su vez el participante decide cambiar de elección entonces las otras 3 puertas restantes tienen 
+ \item[b)]
+ \item[c)]
+\end{itemize}
+
+\subsection{Pregunta 2}
+?
+\subsection{Pregunta 3}
+?
+\subsection{Pregunta 4}
+\begin{itemize}
+ \item[a)]
+ 
+ 
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p3_teo_100.jpg}
+              \caption{This is the first figure}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p3_emp_100.jpg}
+              \caption{This is the second figure}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+\end{itemize}
+
+\subsection{Pregunta 5}
+\subsection{Pregunta 6}
+\subsection{Pregunta 7}
+\subsection{Pregunta 8}
+
+
+
+
+\section{Conclusiones}
+
+
+%\section{Anexos}
+
+
+%\bibliographystyle{alpha}
+%\bibliography{bibbase}
+
+% referencias
+%[1] Nombre de la referencia, Autor.
+
+
+
+\end{document}
