@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {2.2}Pregunta 2}{3}
 \contentsline {subsection}{\numberline {2.3}Pregunta 3}{3}
 \contentsline {subsection}{\numberline {2.4}Pregunta 4}{3}
-\contentsline {subsection}{\numberline {2.5}Pregunta 5}{4}
-\contentsline {subsection}{\numberline {2.6}Pregunta 6}{4}
-\contentsline {subsection}{\numberline {2.7}Pregunta 7}{4}
-\contentsline {subsection}{\numberline {2.8}Pregunta 8}{4}
-\contentsline {section}{\numberline {3}Conclusiones}{4}
+\contentsline {subsection}{\numberline {2.5}Pregunta 5}{6}
+\contentsline {subsection}{\numberline {2.6}Pregunta 6}{6}
+\contentsline {subsection}{\numberline {2.7}Pregunta 7}{6}
+\contentsline {subsection}{\numberline {2.8}Pregunta 8}{6}
+\contentsline {section}{\numberline {3}Conclusiones}{6}

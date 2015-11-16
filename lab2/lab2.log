@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.11.14)  15 NOV 2015 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.11.14)  15 NOV 2015 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,36 +475,97 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: p3_teo_100.jpg Graphic file (type jpg)
 
 <use p3_teo_100.jpg>
-Package pdftex.def Info: p3_teo_100.jpg used on input line 83.
+Package pdftex.def Info: p3_teo_100.jpg used on input line 89.
 (pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
  <p3_emp_100.jpg, id=16, 481.8pt x 481.8pt>
 File: p3_emp_100.jpg Graphic file (type jpg)
 
 <use p3_emp_100.jpg>
-Package pdftex.def Info: p3_emp_100.jpg used on input line 90.
+Package pdftex.def Info: p3_emp_100.jpg used on input line 96.
 (pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
- [3] [4 <./p3_teo_100.jpg> <./p3_emp_100.jpg>] (./lab2.aux) ) 
+
+Overfull \hbox (82.83353pt too wide) in paragraph at lines 84--101
+[]\OT1/cmr/m/n/10 suma [1] 0.2156783 $[]$ 
+ []
+
+[3]
+Overfull \hbox (7.3168pt too wide) in paragraph at lines 110--112
+[]\OT1/cmr/m/n/10 [1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.
+92679954 0.98145105 [8] 0.99683271
+ []
+
+<p4_teo_500.jpg, id=22, 481.8pt x 481.8pt>
+File: p4_teo_500.jpg Graphic file (type jpg)
+ <use p4_teo_500.jpg>
+Package pdftex.def Info: p4_teo_500.jpg used on input line 120.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_emp_500.jpg, id=23, 481.8pt x 481.8pt>
+File: p4_emp_500.jpg Graphic file (type jpg)
+ <use p4_emp_500.jpg>
+Package pdftex.def Info: p4_emp_500.jpg used on input line 127.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_teo_1000.jpg, id=24, 481.8pt x 481.8pt>
+File: p4_teo_1000.jpg Graphic file (type jpg)
+ <use p4_teo_1000.jpg>
+Package pdftex.def Info: p4_teo_1000.jpg used on input line 146.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_emp_1000.jpg, id=25, 481.8pt x 481.8pt>
+File: p4_emp_1000.jpg Graphic file (type jpg)
+ <use p4_emp_1000.jpg>
+Package pdftex.def Info: p4_emp_1000.jpg used on input line 153.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+ [4 <./p3_teo_100.jpg> <./p3_emp_100.jpg> <./p4_teo_500.jpg> <./p4_emp_500.jpg>
+]
+<p4_teo_1500.jpg, id=29, 481.8pt x 481.8pt>
+File: p4_teo_1500.jpg Graphic file (type jpg)
+ <use p4_teo_1500.jpg>
+Package pdftex.def Info: p4_teo_1500.jpg used on input line 177.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_emp_1500.jpg, id=30, 481.8pt x 481.8pt>
+File: p4_emp_1500.jpg Graphic file (type jpg)
+ <use p4_emp_1500.jpg>
+Package pdftex.def Info: p4_emp_1500.jpg used on input line 184.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_teo_100000.jpg, id=31, 481.8pt x 481.8pt>
+File: p4_teo_100000.jpg Graphic file (type jpg)
+ <use p4_teo_100000.jpg>
+Package pdftex.def Info: p4_teo_100000.jpg used on input line 205.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+
+<p4_emp_100000.jpg, id=32, 481.8pt x 481.8pt>
+File: p4_emp_100000.jpg Graphic file (type jpg)
+ <use p4_emp_100000.jpg>
+Package pdftex.def Info: p4_emp_100000.jpg used on input line 212.
+(pdftex.def)             Requested size: 187.20668pt x 187.20282pt.
+ [5 <./p4_teo_1000.jpg> <./p4_emp_1000.jpg> <./p4_teo_1500.jpg> <./p4_emp_1500.
+jpg>]
+[6 <./p4_teo_100000.jpg> <./p4_emp_100000.jpg>] (./lab2.aux) ) 
 Here is how much of TeX's memory you used:
- 4266 strings out of 495025
- 58956 string characters out of 6181514
+ 4306 strings out of 495025
+ 59718 string characters out of 6181514
  142244 words of memory out of 5000000
- 7412 multiletter control sequences out of 15000+600000
+ 7444 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,12n,49p,237b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb>
-Output written on lab2.pdf (4 pages, 119753 bytes).
+ 38i,13n,49p,237b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb>
+Output written on lab2.pdf (6 pages, 227407 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

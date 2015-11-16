@@ -26,41 +26,74 @@ frec_acum <- cumsum(frec_relat)
 p_real <- pbinom(0:as.integer(max(names(frec_acum))), 10, 0.33)
 resta <- abs(frec_acum - p_real)
 suma <- sum(resta)
-jpeg("p3_teo_1000.jpg")
+jpeg("p4_teo_500.jpg")
 plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica",main="Con n = 500")
 dev.off()
-jpeg("p3_emp_1000.jpg")
+jpeg("p4_emp_500.jpg")
 plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica", main="Con n = 500")
 dev.off()
 
-totalp3_1000 <- 1000
-muestra <- rbinom(totalp3_1000,10,0.33)
+totalp4_1000 <- 1000
+muestra <- rbinom(totalp4_1000,10,0.33)
 frec <- sapply(split(muestra,muestra),length)
-frec_relat  <- frec/totalp3_1000
+frec_relat  <- frec/totalp4_1000
 frec_acum <- cumsum(frec_relat)
 p_real <- pbinom(0:as.integer(max(names(frec_acum))), 10, 0.33)
 resta <- abs(frec_acum - p_real)
 suma <- sum(resta)
-jpeg("p3_teo_10000.jpg")
-plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica")
+jpeg("p4_teo_1000.jpg")
+plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica", main="Con n = 1000")
 dev.off()
-jpeg("p3_emp_10000.jpg")
-plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica")
+jpeg("p4_emp_1000.jpg")
+plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica", main="Con n = 1000")
 dev.off()
 
 
-totalp3_1500 <- 1500
-muestra <- rbinom(totalp3_1500,10,0.33)
+totalp4_1500 <- 1500
+muestra <- rbinom(totalp4_1500,10,0.33)
 frec <- sapply(split(muestra,muestra),length)
-frec_relat  <- frec/totalp3_1500
+frec_relat  <- frec/totalp4_1500
 frec_acum <- cumsum(frec_relat)
 p_real <- pbinom(0:as.integer(max(names(frec_acum))), 10, 0.33)
 resta <- abs(frec_acum - p_real)
 suma <- sum(resta)
-jpeg("p3_teo_100000.jpg")
-plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica")
+frec_acum
+p_real
+suma
+jpeg("p4_teo_1500.jpg")
+plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica", main="Con n = 1500")
 dev.off()
-jpeg("p3_emp_100000.jpg")
-plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica")
+jpeg("p4_emp_1500.jpg")
+plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica", main="Con n = 1500")
 dev.off()
 
+totalp4_1800 <- 100000
+muestra <- rbinom(totalp4_1800,10,0.33)
+frec <- sapply(split(muestra,muestra),length)
+frec_relat  <- frec/totalp4_1800
+frec_acum <- cumsum(frec_relat)
+p_real <- pbinom(0:as.integer(max(names(frec_acum))), 10, 0.33)
+resta <- abs(frec_acum - p_real)
+suma <- sum(resta)
+frec_acum
+p_real
+suma
+jpeg("p4_teo_100000.jpg")
+plot(p_real,type="b",col="blue",xlab="n°",ylab="Probabilidad teórica", main="Con n = 100000")
+dev.off()
+jpeg("p4_emp_100000.jpg")
+plot(frec_acum,type="b",col="red",xlab="n°",ylab="Probabilidad empírica", main="Con n = 100000")
+dev.off()
+
+# pregunta 5
+totalp5_100 <- 1500
+muestra <- rcauchy(totalp5_100, location = 0, scale = 2.5)
+frec <- sapply(split(muestra,muestra),length)
+frec_relat  <- frec/totalp5_100
+frec_acum <- cumsum(frec_relat)
+p_real <- pcauchy(0:as.integer(max(names(frec_acum))), location = 0, scale = 2.5)
+resta <- abs(frec_acum - p_real)
+suma <- sum(resta)
+frec_acum
+p_real
+suma

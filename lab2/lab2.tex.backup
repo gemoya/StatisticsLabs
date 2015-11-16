@@ -73,21 +73,47 @@ El problema en cuestión es el famoso Monty Hall Problem para un caso particular
 ?
 \subsection{Pregunta 4}
 \begin{itemize}
- \item[a)]
- 
+ \item[a)] Para responder a la pregunta se realizan distintos experimentos para $n= 100,500,1000,1500$, A continuación se muestra el para $n=100$.
+    0    1    2    3    4    5    6    7 
+0.03 0.10 0.32 0.60 0.88 0.98 0.99 1.00 
+
+> p_real
+[1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
+[8] 0.99683271
+
  
   \begin{minipage}{\linewidth}
       \centering
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
               \includegraphics[width=\linewidth]{p3_teo_100.jpg}
-              \caption{This is the first figure}
+              \caption{P. Te\'orica para n = 100}
           \end{figure}
       \end{minipage}
       \hspace{0.05\linewidth}
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
               \includegraphics[width=\linewidth]{p3_emp_100.jpg}
+              \caption{P. Emp\'irica para n = 100}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+\end{itemize}
+
+Para n = 500
+
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p3_teo_500.jpg}
+              \caption{This is the first figure}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p3_emp_500.jpg}
               \caption{This is the second figure}
           \end{figure}
       \end{minipage}
