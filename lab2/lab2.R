@@ -105,40 +105,26 @@ frec <- sapply(split(c1,c1),length)
 frec_relat <- frec/100
 frec_acum <- cumsum(frec_relat)
 p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 0, scale = 2.5 )
-resta <- abs(frec_acum - p_real)
+resta<- abs(frec_acum - p_real)
 suma <- sum(resta)
+resta
 suma
 
-muestra_p5 <- rcauchy(1000, location = 0, scale = 2.5 )
-c1 <- cut(muestra_p5, breaks = seq(min(muestra_p5), max(muestra_p5), length.out = 15), include.lowest = FALSE)
-frec <- sapply(split(c1,c1),length)
-frec_relat <- frec/1000
-frec_acum <- cumsum(frec_relat)
-p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 0, scale = 2.5 )
-resta <- abs(frec_acum - p_real)
-suma <- sum(resta)
-
-muestra_p5 <- rcauchy(10000, location = 0, scale = 2.5 )
-c1 <- cut(muestra_p5, breaks = seq(min(muestra_p5), max(muestra_p5), length.out = 15), include.lowest = FALSE)
-frec <- sapply(split(c1,c1),length)
-frec_relat <- frec/10000
-frec_acum <- cumsum(frec_relat)
-p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 0, scale = 2.5 )
-resta <- abs(frec_acum - p_real)
-suma <- sum(resta)
-
-muestra_p5 <- rcauchy(100000, location = 0, scale = 2.5 )
-c1 <- cut(muestra_p5, breaks = seq(min(muestra_p5), max(muestra_p5), length.out = 15), include.lowest = FALSE)
-frec <- sapply(split(c1,c1),length)
-frec_relat <- frec/100000
-frec_acum <- cumsum(frec_relat)
-p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 0, scale = 2.5 )
-resta <- abs(frec_acum - p_real)
-suma <- sum(resta)
-
-plot(frec_acum, type = "l")
-
-teeest <- c()
-for(i in c(names(frec_acum))){
-  teeest<-c(teeest,i)
+errores <- c()
+for(i in c(10,20,30,40,50,100,200,300,400,500,1000)){
+  muestra_p5 <- rcauchy(i, location = 0, scale = 2.5 )
+  c1 <- cut(muestra_p5, breaks = seq(min(muestra_p5), max(muestra_p5), length.out = 15), include.lowest = FALSE)
+  frec <- sapply(split(c1,c1),length)
+  frec_relat <- frec/i
+  frec_acum <- cumsum(frec_relat)
+  p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 0, scale = 2.5 )
+  resta<- abs(frec_acum - p_real)
+  suma <- sum(resta)
+  
+  errores<-cbind(errores,resta)
+  
 }
+
+jpeg("p5_boxplot.jpg")
+boxplot(errores)
+dev.off()
