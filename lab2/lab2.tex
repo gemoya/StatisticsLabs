@@ -229,63 +229,154 @@ empírica y teórica respectivamente para distintos $n$ pedidos.
  \item[a)] 
       Luego de varias muestras para obtenidas de la distribución, se grafica los errores desde el menor $n$ hasta el mayor, el como
       disminuye este error hasta llegara 0 (o casi 0) permite apreciar la convergencia de la probabilidad empírica hacia la teórica con pruebas
-      de ello, mostrando que la gran cantidad de experimentos logra representar el fenómeno a estudiar. Se utilizan $n=10,20,30,40,50,100,200,300,400,500,1000$.
+      de ello, mostrando que la gran cantidad de experimentos logra representar el fenómeno a estudiar. Se utilizan $n=10,20,30,40,50,100,200,300,400,500,1000,1500,2000,5000,10000,100000$.
      
       \begin{figure}[H]
 	      \centering
-              \includegraphics[width=\linewidth]{p5_boxplot.jpg}
+              \includegraphics[width=100mm, scale=0.3]{p5a_boxplot_dif.jpg}
               \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra}
           \end{figure}
+
+
+      \begin{figure}[H]
+        \centering
+              \includegraphics[width=100mm, scale=0.3]{p5a_boxplot_conv.jpg}
+              \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra}
+          \end{figure}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    $n$ & error \\ \hline
+    $10    $  &    $1.865062  $\\
+    $20    $  &    $1.766909 $\\
+    $30    $  &    $0.4731489$   \\
+    $40    $  &    $0.452522 $  \\
+    $50    $  &    $0.3633154 $   \\
+    $100   $  &    $0.04919491$    \\
+    $200   $  &    $0.03697775$    \\
+    $300   $  &    $0.1146243$    \\
+    $400   $  &    $0.06749258$     \\
+    $500   $  &    $0.02033396 $     \\
+    $1000  $   &   $0.02223003$     \\
+    $1500  $  &    $0.004464918 $   \\
+    $2000  $  &    $0.007289842$    \\
+    $5000  $  &    $0.004053419 $     \\
+    $10000 $   &   $0.001490559$   \\
+    $100000$   &   $1.380873e-05$   \\ \hline
+    \end{tabular}
+\end{table}
       
+
+
+
  \item[b)]
  
-    Se matienen los valores de n, $n10,20,30,40,50,100,200,300,400,500,1000$. Con los cuales se calculan los errore respectivos que seŕan mostrados 
+    Se matienen los valores de n, $n=10,20,30,40,50,100,200,300,400,500,1000,1500,2000,5000,10000,100000$. Con los cuales se calculan los errore respectivos que seŕan mostrados 
     con boxplots.
        \begin{figure}[H]
 	      \centering
-              \includegraphics[width=\linewidth]{p5b_boxplot.jpg}
+              \includegraphics[width=100mm, scale=0.3]{p5b_boxplot_dif.jpg}
               \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra, location 20, scale = 30}
           \end{figure}
+
+       \begin{figure}[H]
+        \centering
+              \includegraphics[width=100mm, scale=0.3]{p5b_boxplot_conv.jpg}
+              \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra, location 20, scale = 30}
+          \end{figure}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    $n$ & error \\ \hline
+    10      &    1.030443  \\
+    20      &    1.16216   \\
+    30      &     0.7083201   \\
+    40      &    0.4317799   \\
+    50      &    0.5272908    \\
+    100     &    0.2695098     \\
+    200     &    0.09134366    \\
+    300     &    0.05696333    \\
+    400     &    0.03351027     \\
+    500     &    0.02355948     \\
+    1000     &   0.004144235     \\
+    1500    &    0.009238539   \\
+    2000    &    0.01659956    \\
+    5000    &    0.003058157     \\
+    10000    &    0.00183897   \\
+    100000   &   0.0002454811   \\ \hline
+    \end{tabular}
+\end{table}
+
+
+     precision precision precision precision precision precision  precision  precision
+[1,]  1.030443   1.16216 0.7083201 0.4317799 0.5272908 0.2695098 0.09134366 0.05696333
+      precision  precision   precision   precision  precision   precision  precision
+[1,] 0.03351027 0.02355948 0.004144235 0.009238539 0.01659956 0.003058157 0.00183897
+        precision
+[1,] 0.0002454811
       
-       p real
- [1] 0.004512817 0.006047351 0.009162758 0.018891095 0.760766300 0.983235897
- [7] 0.991368817 0.994188890 0.995620066 0.996485624 0.997065539 0.997481179
-[13] 0.997793686 0.998037208
-frec acum
-(-2.63e+03,-2.09e+03] (-2.09e+03,-1.55e+03] (-1.55e+03,-1.02e+03] 
-                0.000                 0.005                 0.006 
-     (-1.02e+03,-480]           (-480,57.1]            (57.1,594] 
-                0.012                 0.775                 0.980 
-       (594,1.13e+03]   (1.13e+03,1.67e+03]   (1.67e+03,2.21e+03] 
-                0.992                 0.995                 0.998 
-  (2.21e+03,2.74e+03]   (2.74e+03,3.28e+03]   (3.28e+03,3.82e+03] 
-                0.998                 0.998                 0.998 
-  (3.82e+03,4.35e+03]   (4.35e+03,4.89e+03] 
-                0.998                 0.999 
- resta
-(-2.63e+03,-2.09e+03] (-2.09e+03,-1.55e+03] (-1.55e+03,-1.02e+03] 
-         0.0045128171          0.0010473510          0.0031627582 
-     (-1.02e+03,-480]           (-480,57.1]            (57.1,594] 
-         0.0068910951          0.0142337004          0.0032358967 
-       (594,1.13e+03]   (1.13e+03,1.67e+03]   (1.67e+03,2.21e+03] 
-         0.0006311833          0.0008111102          0.0023799345 
-  (2.21e+03,2.74e+03]   (2.74e+03,3.28e+03]   (3.28e+03,3.82e+03] 
-         0.0015143760          0.0009344609          0.0005188207 
-  (3.82e+03,4.35e+03]   (4.35e+03,4.89e+03] 
-         0.0002063140          0.0009627921 
  
 \end{itemize}
 
 \subsection{Pregunta 6}
 
+Como se ha hecho para el caso anterior, se tomaron intervalos para agrupar los datos y poder calcular
+las frecuencias relativas, junto a ello obtener la probabilidad empírica y teórica. Los experimentos
+realizados son para $n=10,20,30,40,50,100,200,300,400,500,1000,1500,2000,5000,10000,100000$ siendo estos un total de $16$. A cotinuación se muestra
+el boxplot que refleja la convergencia de las probabilidades. 
+
        \begin{figure}[H]
 	      \centering
-              \includegraphics[width=\linewidth]{p6_boxplot.jpg}
+              \includegraphics[width=100mm, scale=0.3]{p6_boxplot_dif.jpg}
               \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra}
           \end{figure}
 
+Para este caso se puede ver que que la convergencia no es tan estable hasta que se alcanza un $n=1000$, siendo el caso final.
+Tarda más en converger respecto a los experimentos de preguntas anteriores. Gráficamente es lo siguiente
 
+      \begin{figure}[H]
+        \centering
+              \includegraphics[width=100mm, scale=0.3]{p6_boxplot_conv.jpg}
+              \caption{Boxplot de los errores puntuales a medida que se aumenta el tamaño de la muestra}
+          \end{figure}
 
+Donde la diferencia se obtiene para $n=100000$.
+
+Para detallar lo anterior se construye una tabla para mostrar el error para cada $n$:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    $n$ & error \\ \hline
+    10      & 1.025721     \\
+    20      & 0.9544134     \\
+    30      & 0.6825494    \\
+    40      & 0.3473851    \\
+    50      & 1.351208    \\
+    100     & 0.3634327     \\
+    200     & 0.2651737    \\
+    300     & 0.1910359     \\
+    400     & 0.07210407     \\
+    500     & 0.2754461     \\
+    1000     & 0.05544603     \\
+    1500    & 0.03382561    \\
+    2000    & 0.05880897    \\
+    5000    & 0.03764551     \\
+    10000    & 0.03716417    \\
+    100000   & 0.007556121   \\ \hline
+    \end{tabular}
+\end{table}
+
+ 
+
+\newpage
 \subsection{Pregunta 7}
 
 
