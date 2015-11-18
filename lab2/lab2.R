@@ -128,3 +128,45 @@ for(i in c(10,20,30,40,50,100,200,300,400,500,1000)){
 jpeg("p5_boxplot.jpg")
 boxplot(errores)
 dev.off()
+
+
+errores_5b <- c()
+for(i in c(10,20,30,40,50,100,200,300,400,500,1000)){
+  muestra_p5 <- rcauchy(i, location = 25, scale = 30)
+  c1 <- cut(muestra_p5, breaks = seq(min(muestra_p5), max(muestra_p5), length.out = 15), include.lowest = FALSE)
+  frec <- sapply(split(c1,c1),length)
+  frec_relat <- frec/i
+  frec_acum <- cumsum(frec_relat)
+  p_real <- pcauchy(seq(min(muestra_p5),max(muestra_p5),length.out = 15)[-1], location = 25, scale = 30 )
+  resta<- abs(frec_acum - p_real)
+  suma <- sum(resta)
+  
+  errores_5b<-cbind(errores_5b,resta)
+  
+}
+
+jpeg("p5b_boxplot.jpg")
+boxplot(errores_5b)
+dev.off()
+
+errores_6<-c()
+c1 <- c()
+for(i in c(10,20,30,40,50,100,200,300,400,500,1000)){
+  muestra_p6 <- rweibull(i, 10, 40)
+  c1 <- cut(muestra_p6, breaks = seq(min(muestra_p6), max(muestra_p6), length.out = 15), include.lowest = FALSE)
+  frec <- sapply(split(c1,c1),length)
+  frec_relat <- frec/i
+  frec_acum <- cumsum(frec_relat)
+  p_real <- pweibull(seq(min(muestra_p6),max(muestra_p6),length.out = 15)[-1], 10, 40 )
+  resta<- abs(frec_acum - p_real)
+  suma <- sum(resta)
+  
+  errores_6<-cbind(errores_6,resta)
+  
+}
+
+jpeg("p6_boxplot.jpg")
+boxplot(errores_6)
+dev.off()
+
+rweibull(n, 10, 40)

@@ -77,11 +77,11 @@ El problema en cuestión es el famoso Monty Hall Problem para un caso particular
     0    1    2    3    4    5    6    7 
 0.03 0.10 0.32 0.60 0.88 0.98 0.99 1.00 
 
-> p_real
+ p real
 [1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
 [8] 0.99683271
 
- 
+suma [1] 0.2156783
   \begin{minipage}{\linewidth}
       \centering
       \begin{minipage}{0.45\linewidth}
@@ -98,29 +98,158 @@ El problema en cuestión es el famoso Monty Hall Problem para un caso particular
           \end{figure}
       \end{minipage}
   \end{minipage}
-\end{itemize}
+
 
 Para n = 500
+
+frec acum
+    0     1     2     3     4     5     6     7     8 
+0.024 0.116 0.304 0.552 0.756 0.934 0.984 0.992 1.000
+
+
+[1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
+[8] 0.99683271 0.99967373
+
+[1] 0.08569003
+
 
   \begin{minipage}{\linewidth}
       \centering
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
-              \includegraphics[width=\linewidth]{p3_teo_500.jpg}
-              \caption{This is the first figure}
+              \includegraphics[width=\linewidth]{p4_teo_500.jpg}
+              \caption{P. Te\'orica para n = 500}
           \end{figure}
       \end{minipage}
       \hspace{0.05\linewidth}
       \begin{minipage}{0.45\linewidth}
           \begin{figure}[H]
-              \includegraphics[width=\linewidth]{p3_emp_500.jpg}
-              \caption{This is the second figure}
+              \includegraphics[width=\linewidth]{p4_emp_500.jpg}
+              \caption{P. Emp\'irica para n = 500}
           \end{figure}
       \end{minipage}
   \end{minipage}
+  
+ frec acum
+    0     1     2     3     4     5     6     7     8     9 
+0.033 0.127 0.318 0.583 0.804 0.938 0.982 0.996 0.998 1.000 
+ p real
+ [1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
+ [8] 0.99683271 0.99967373 0.99998468
+ suma
+[1] 0.08401288
+
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_teo_1000.jpg}
+              \caption{P. Te\'orica para n = 1000}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_emp_1000.jpg}
+              \caption{P. Emp\'irica para n = 1000}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+  
+  
+  
+  
+ frec acum
+         0          1          2          3          4          5          6 
+0.02133333 0.11333333 0.30800000 0.56066667 0.79533333 0.92000000 0.97800000 
+         7          8 
+0.99600000 1.00000000 
+p real
+[1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
+[8] 0.99683271 0.99967373
+suma
+[1] 0.03022055
+ 
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_teo_1500.jpg}
+              \caption{P. Te\'orica para n = 1500}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_emp_1500.jpg}
+              \caption{P. Emp\'irica para n = 1500}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+
+  
+frec acum
+      0       1       2       3       4       5       6       7       8       9 
+0.01827 0.10744 0.30679 0.57137 0.79618 0.92856 0.98189 0.99710 0.99967 1.00000 
+ p real
+ [1] 0.01822838 0.10800994 0.30700341 0.56836796 0.79364860 0.92679954 0.98145105
+ [8] 0.99683271 0.99967373 0.99998468
+ suma
+[1] 0.008844152
+ 
+ 
+  \begin{minipage}{\linewidth}
+      \centering
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_teo_100000.jpg}
+              \caption{P. Te\'orica para n = 100000}
+          \end{figure}
+      \end{minipage}
+      \hspace{0.05\linewidth}
+      \begin{minipage}{0.45\linewidth}
+          \begin{figure}[H]
+              \includegraphics[width=\linewidth]{p4_emp_100000.jpg}
+              \caption{P. Emp\'irica para n = 100000}
+          \end{figure}
+      \end{minipage}
+  \end{minipage}
+  
+\item[b)]
+Finalmente para un $n = 100000$ se encuentra una convergencia menor a 0.01, para el caso puntual
+es de 0.008844152.
+ 
 \end{itemize}
 
 \subsection{Pregunta 5}
+
+Al ser cauchy una distribución continua se tomarán valores por intervalos a los cuales se calculará la probabilidad
+empírica y teórica respectivamente para distintos $n$ pedidos.
+\begin{itemize}
+ \item[a)] 
+      Luego de varias muestras para obtenidas de la distribución, se grafica los errores desde el menor $n$ hasta el mayor, el como
+      disminuye este error hasta llegara 0 (o casi 0) permite apreciar la convergencia de la probabilidad empírica hacia la teórica con pruebas
+      de ello, mostrando que la gran cantidad de experimentos logra representar el fenómeno a estudiar. Se utilizan $n=10,20,30,40,50,100,200,300,400,500,1000$.
+     
+      \begin{figure}[H]
+	      \centering
+              \includegraphics[width=\linewidth]{p5_boxplot.jpg}
+              \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra}
+          \end{figure}
+      
+ \item[b)]
+ 
+    Se matienen los valores de n, $n10,20,30,40,50,100,200,300,400,500,1000$. Con los cuales se calculan los errore respectivos que seŕan mostrados 
+    con boxplots.
+       \begin{figure}[H]
+	      \centering
+              \includegraphics[width=\linewidth]{p5b_boxplot.jpg}
+              \caption{Boxplot de error a medida que se aumenta el tamaño de la muestra, location 20, scale = 30}
+          \end{figure}
+      
+ 
+\end{itemize}
+
 \subsection{Pregunta 6}
 \subsection{Pregunta 7}
 \subsection{Pregunta 8}
