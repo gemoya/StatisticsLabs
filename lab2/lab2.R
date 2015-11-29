@@ -1,6 +1,103 @@
-p1  <-sample(c("A","C","C"),1000, replace=T, prob = c(4/15,4/15,4/15))
-#p1  <-sample(c("A","C","C"),1000, replace=T, prob = c(0.33,0.33,0.33))
+#https://rpubs.com/matabuelas/monty_hall
+#p1
+n1 <- 10
+n2 <- 50
+n3 <- 100
+n4 <- 250
+n5 <- 500
+n6 <- 1000
 
+R1 = c()
+R2 = c()
+R3 = c()
+R4 = c()
+R5 = c()
+R6 = c()
+
+f <- function(n){
+  vector <- c()
+  for(i in 1:100) {
+    puertas=replicate(n,sample(c(1,1,1,1,0),replace=F))
+    experimento= t(puertas)
+    
+    jugador= replicate(n,sample(c(1,2,3),size=1))
+    idpos= 5*(0:(n-1))
+    poselm= which(t(experimento==0))-idpos
+    cuantos=sum(jugador==poselm)
+    probnc= cuantos/n
+    # Probabilidad de acertar si cambiamos de puerta
+    probc= 1-probnc
+    
+    vector <- c(vector, probc)
+  }
+  
+  return(vector)
+}
+
+
+
+R1 <- f(n1)
+R2 <- f(n2)
+R3 <- f(n3)
+R4 <- f(n4)
+R5 <- f(n5)
+R6 <- f(n6)
+
+
+data <- data.frame(R1,R2,R3,R4,R5,R6)
+
+boxplot(R1,R2,R3,R4,R5,R6)
+
+boxplot(data, las = 2, names = c("n=10","n=50","n=100","n=250","n=500","n=1000"), horizontal = FALSE)
+
+
+#p2
+
+n10    = 10
+n50    = 50
+n100   = 100
+n250   = 250
+n500   = 500
+n1000  = 1000
+
+
+f <- function(n){
+  prob <- c()
+  for(j in 1:100){
+    e1 <- runif(n, 0, 60)
+    e2 <- runif(n, 0, 60)
+    dif <- abs(e1-e2)
+    R=c()
+    for(i in dif){
+      if(i<10)
+        R<- c(R,1)
+      else
+        R<- c(R,0)
+    }
+    prob <- c(prob,mean(R))
+  }
+  return(prob)
+}
+
+
+R10  <- f(n10)
+R50  <- f(n50)
+R100 <- f(n100)
+R250 <- f(n250)
+R500 <- f(n500)
+R1000 <- f(n1000)
+
+
+
+data <- data.frame(R10,R100,R500,R1000)
+boxplot(data, las = 2, names = c("n=10","n=100","n=500","n=1000"), horizontal = FALSE)
+
+
+
+
+
+
+#p4
 
 totalp4_100 <- 100
 muestra <- rbinom(totalp3_100,10,0.33)
@@ -185,6 +282,7 @@ jpeg("p5b_boxplot_conv.jpg")
 boxplot(errores_5b)
 dev.off()
 
+#p6
 errores_6<-c()
 c1 <- c()
 dif_6 <- c()
@@ -210,6 +308,3 @@ dev.off()
 jpeg("p6_boxplot_conv.jpg")
 boxplot(errores_6)
 dev.off()
-
-
-rweibull(n, 10, 40)
