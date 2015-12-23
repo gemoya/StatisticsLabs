@@ -25,12 +25,54 @@ summary(backward2)
 ### FORWARD ###
 
 # lm_wine2: modelo con todas las variables, iremos eliminando una por una y observando los Pr
+lm_wine2 <- lm(formula = quality~1, data=wine_data)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + alcohol)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + free.sulfur.dioxide)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + volatile.acidity)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + sulphates)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + residual.sugar)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + total.sulfur.dioxide)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + chlorides)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + pH)
+
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+lm_wine2<-update(lm_wine2, .~. + density)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+
+lm_wine2<-update(lm_wine2, .~. + fixed.acidity)
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + density + pH + sulphates + alcohol, test = "F")
+
+
+add1(lm_wine2, scope = ~fixed.acidity + volatile.acidity + citric.acid + 
+       residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + 
+       density + pH + sulphates + alcohol, test = "F")
+
+
+
 lm_wine2 <- lm(formula = quality~ fixed.acidity + volatile.acidity + citric.acid + 
                 residual.sugar + chlorides + free.sulfur.dioxide + total.sulfur.dioxide + 
                 density + pH + sulphates + alcohol, data=wine_data)
 
 # lm_wine3: modelo que empieza con 0 variables y se le iran agregando una por una
-lm_wine3 <- lm(formula = quality~.,data=wine_data)
+lm_wine3 <- lm(formula = quality~1,data=wine_data)
 summary(lm_wine3)
 
 #observamos los Pr de lm_wine2, tenemos 5 candidatos con el mismo valor de Pr, seleccionamos el que tenga mayor correlacion con quality
