@@ -1,8 +1,13 @@
 #red_data<-read.table("~/Documents/UTFSM/ILI-280/StatisticsLabs/lab4/winequality-red.csv",header=TRUE,sep=";")
 #white_data<-read.table("~/Documents/UTFSM/ILI-280/StatisticsLabs/lab4/winequality/winequality-white.csv",header=TRUE,sep=";")
 
-red_data<-read.table("C:/Users/Carlos/Google Drive/ESTACA/LEC/LEC4/moodle/winequality-red.csv",header=TRUE,sep=";")
-white_data<-read.table("C:/Users/Carlos/Google Drive/ESTACA/LEC/LEC4/moodle/winequality-white.csv",header=TRUE,sep=";")
+#red_data<-read.table("C:/Users/Carlos/Google Drive/ESTACA/LEC/LEC4/moodle/winequality-red.csv",header=TRUE,sep=";")
+#white_data<-read.table("C:/Users/Carlos/Google Drive/ESTACA/LEC/LEC4/moodle/winequality-white.csv",header=TRUE,sep=";")
+
+red_data<-read.table("~/Documents/StatisticsLabs/lab4/winequality-red.csv",header=TRUE,sep=";")
+white_data<-read.table("~/Documents/StatisticsLabs/lab4/winequality-white.csv",header=TRUE,sep=";")
+
+
 wine_data<-rbind(red_data,white_data)
 
 lm_wine <- lm(formula = quality~.,data=wine_data)
@@ -11,11 +16,11 @@ drop1(lm_wine, test = "F")
 
 ### BACKWARD lm_red ###
 backward1 = update(lm_wine, .~. -  citric.acid)
-#drop1(backward1, test = "F")
+drop1(backward1, test = "F")
 
 backward2 <- update(backward1, .~. - chlorides)
-#drop1(backward2, test = "F")
-
+drop1(backward2, test = "F")
+summary(backward2)
 
 ### FORWARD ###
 
